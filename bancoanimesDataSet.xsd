@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="bancoanimesDataSet" targetNamespace="http://tempuri.org/bancoanimesDataSet.xsd" xmlns:mstns="http://tempuri.org/bancoanimesDataSet.xsd" xmlns="http://tempuri.org/bancoanimesDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="bancoanimesConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="bancoanimesConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.HamimiProofei.Properties.Settings.GlobalReference.Default.bancoanimesConnectionString" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tblanimeTableAdapter" GeneratorDataComponentClassName="tblanimeTableAdapter" Name="tblanime" UserDataComponentName="tblanimeTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="bancoanimesConnectionString (Settings)" DbObjectName="bancoanimes.tblanime" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `nomeAnime` FROM `tblanime`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="nomeAnime" DataSetColumn="nomeAnime" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="bancoanimesDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="bancoanimesDataSet" msprop:Generator_UserDSName="bancoanimesDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tblanime" msprop:Generator_TableClassName="tblanimeDataTable" msprop:Generator_TableVarName="tabletblanime" msprop:Generator_TablePropName="tblanime" msprop:Generator_RowDeletingName="tblanimeRowDeleting" msprop:Generator_RowChangingName="tblanimeRowChanging" msprop:Generator_RowEvHandlerName="tblanimeRowChangeEventHandler" msprop:Generator_RowDeletedName="tblanimeRowDeleted" msprop:Generator_UserTableName="tblanime" msprop:Generator_RowChangedName="tblanimeRowChanged" msprop:Generator_RowEvArgName="tblanimeRowChangeEvent" msprop:Generator_RowClassName="tblanimeRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="nomeAnime" msprop:Generator_ColumnVarNameInTable="columnnomeAnime" msprop:Generator_ColumnPropNameInRow="nomeAnime" msprop:Generator_ColumnPropNameInTable="nomeAnimeColumn" msprop:Generator_UserColumnName="nomeAnime">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="70" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

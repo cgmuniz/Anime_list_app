@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="bancoanimesDataSet1" targetNamespace="http://tempuri.org/bancoanimesDataSet1.xsd" xmlns:mstns="http://tempuri.org/bancoanimesDataSet1.xsd" xmlns="http://tempuri.org/bancoanimesDataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="bancoanimesConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="bancoanimesConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.HamimiProofei.Properties.Settings.GlobalReference.Default.bancoanimesConnectionString" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tbladminTableAdapter" GeneratorDataComponentClassName="tbladminTableAdapter" Name="tbladmin" UserDataComponentName="tbladminTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="bancoanimesConnectionString (Settings)" DbObjectName="bancoanimes.tbladmin" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `nomeAdmin`, `emailAdmin` FROM `tbladmin`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="nomeAdmin" DataSetColumn="nomeAdmin" />
+              <Mapping SourceColumn="emailAdmin" DataSetColumn="emailAdmin" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="bancoanimesDataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="bancoanimesDataSet1" msprop:Generator_UserDSName="bancoanimesDataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tbladmin" msprop:Generator_TableClassName="tbladminDataTable" msprop:Generator_TableVarName="tabletbladmin" msprop:Generator_TablePropName="tbladmin" msprop:Generator_RowDeletingName="tbladminRowDeleting" msprop:Generator_RowChangingName="tbladminRowChanging" msprop:Generator_RowEvHandlerName="tbladminRowChangeEventHandler" msprop:Generator_RowDeletedName="tbladminRowDeleted" msprop:Generator_UserTableName="tbladmin" msprop:Generator_RowChangedName="tbladminRowChanged" msprop:Generator_RowEvArgName="tbladminRowChangeEvent" msprop:Generator_RowClassName="tbladminRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="nomeAdmin" msprop:Generator_ColumnVarNameInTable="columnnomeAdmin" msprop:Generator_ColumnPropNameInRow="nomeAdmin" msprop:Generator_ColumnPropNameInTable="nomeAdminColumn" msprop:Generator_UserColumnName="nomeAdmin" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="emailAdmin" msprop:Generator_ColumnVarNameInTable="columnemailAdmin" msprop:Generator_ColumnPropNameInRow="emailAdmin" msprop:Generator_ColumnPropNameInTable="emailAdminColumn" msprop:Generator_UserColumnName="emailAdmin" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
